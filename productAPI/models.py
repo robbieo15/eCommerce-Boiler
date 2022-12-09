@@ -14,11 +14,11 @@ class Product(models.Model):
     regularPrice = models.FloatField()
     profit = models.FloatField()
     supply = models.IntegerField()
-    titleImage = models.ImageField(upload_to = 'uploads', default="default.png", blank=True, null=True)
-    image2 = models.ImageField(upload_to = 'uploads', default="default.png", blank=True, null=True)
-    image3 = models.ImageField(upload_to = 'uploads', default="default.png", blank=True, null=True)
-    image4 = models.ImageField(upload_to = 'uploads', default="default.png", blank=True, null=True)
-    slug = models.SlugField(upload_to = 'uploads', default="default.png", blank=True, null=True)
+    titleImage = models.ImageField(upload_to = 'uploads/', default="default.png", blank=True, null=True)
+    image2 = models.ImageField(upload_to = 'uploads/', default="default.png", blank=True, null=True)
+    image3 = models.ImageField(upload_to = 'uploads/', default="default.png", blank=True, null=True)
+    image4 = models.ImageField(upload_to = 'uploads/', default="default.png", blank=True, null=True)
+    slug = models.SlugField(upload_to = 'uploads/', default="default.png", blank=True, null=True)
 
 
     def __str__(self):
